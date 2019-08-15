@@ -27,3 +27,8 @@ Hub =>  manages connections, groups, and messaging.
 
 SendMessage method can be called by a connected client to send a message to all clients. 
 JavaScript client code that calls the method is created later.
+
+# Configure Hub
+The SignalR Server must be configured to pass the request to SignalR.
+= set up the route url for the request in StartUp.
+
