@@ -1,0 +1,25 @@
+Check [Documentation](https://docs.microsoft.com/nl-nl/aspnet/core/tutorials/signalr?tabs=visual-studio-code&view=aspnetcore-2.2) about Web app + Signal R 
+
+# Setup
+Create new folder
+Go to folder
+Run: 
+
+```
+dotnet new webapp -o nameOfApp
+code -r SignalRChat
+```
+
+# Add SignalR Client library
+```
+dotnet tool install -g Microsoft.Web.LibraryManager.Cli
+libman install @aspnet/signalr -p unpkg -d wwwroot/lib/signalr --files dist/browser/signalr.js --files dist/browser/signalr.min.js
+```
+With the latter, you specify the following things: 
+The parameters specify the following options:
+- Use the unpkg provider.
+- Copy files to the wwwroot/lib/signalr destination.
+- Copy only the specified files.
+
+# Create a SignalR Hub
+Hub = handles Client-Server Communication
