@@ -22,4 +22,8 @@ The parameters specify the following options:
 - Copy only the specified files.
 
 # Create a SignalR Hub
-Hub = handles Client-Server Communication
+Hub => handles Client-Server Communication
+Hub =>  manages connections, groups, and messaging.
+
+SendMessage method can be called by a connected client to send a message to all clients. 
+JavaScript client code that calls the method is created later.
